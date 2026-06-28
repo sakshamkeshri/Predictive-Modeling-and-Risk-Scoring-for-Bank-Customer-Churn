@@ -241,13 +241,6 @@ except:
     st.info(
         "feature_importance.csv not found."
     )
-
-st.subheader("🔍 What-If Scenario Analysis")
-
-st.markdown("""
-Modify customer attributes from the sidebar and click **Predict Churn Risk**
-to observe how churn probability changes.
-""")
-
+    
 st.divider()
 
