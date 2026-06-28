@@ -33,7 +33,7 @@ model = joblib.load("churn_model.pkl")
 st.title("🏦 Bank Customer Churn Prediction Dashboard")
 
 st.markdown(
-    "### AI Powered Customer Retention Intelligence System"
+    "AI Powered Customer Retention Intelligence System"
 )
 
 col1, col2, col3 = st.columns(3)
@@ -241,13 +241,6 @@ except:
     st.info(
         "feature_importance.csv not found."
     )
-
-st.subheader("🔍 What-If Scenario Analysis")
-
-st.markdown("""
-Modify customer attributes from the sidebar and click **Predict Churn Risk**
-to observe how churn probability changes.
-""")
 
 st.divider()
 
