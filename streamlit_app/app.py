@@ -236,10 +236,7 @@ if st.button("🚀 Predict Churn Risk"):
 
     ))
 
-    st.plotly_chart(
-        fig,
-        use_container_width=True
-    )
+    st.plotly_chart(fig, width="stretch")
 
 st.divider()
 
@@ -269,7 +266,7 @@ try:
 
     st.plotly_chart(
         fig2,
-        use_container_width=True
+         width="stretch"
     )
 
 except Exception as e:
