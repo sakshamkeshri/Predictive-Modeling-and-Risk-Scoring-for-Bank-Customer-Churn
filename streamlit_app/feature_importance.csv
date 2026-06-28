@@ -1,0 +1,16 @@
+Feature,Importance
+NumOfProducts,0.328579
+IsActiveMember,0.12340118
+ProductDensity,0.10269401
+Geography_Germany,0.080228604
+Age,0.05854215
+EngagementProduct,0.04357728
+Balance,0.038320567
+BalanceSalaryRatio,0.034668732
+Gender_Male,0.03203498
+Geography_Spain,0.03168176
+EstimatedSalary,0.026945882
+AgeTenure,0.02597532
+CreditScore,0.025262235
+HasCrCard,0.02438947
+Tenure,0.023698833

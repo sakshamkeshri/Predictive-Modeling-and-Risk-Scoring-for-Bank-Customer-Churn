@@ -1,0 +1,59 @@
+Streamlit Dashboard Documentation
+Dashboard Name
+Bank Customer Churn Prediction System
+
+Module 1: Customer Churn Risk Calculator
+Inputs:
+
+Credit Score
+
+Age
+
+Tenure
+
+Balance
+
+Number of Products
+
+Active Member Status
+
+Geography
+
+Gender
+
+Outputs:
+
+Churn Probability
+
+Risk Category
+
+Module 2: Feature Importance Dashboard
+Displays:
+
+Top Churn Drivers
+
+Feature Importance Chart
+
+Module 3: What-If Scenario Simulator
+Users can modify:
+
+Product Count
+
+Customer Activity
+
+Salary
+
+Balance
+
+Dashboard recalculates churn probability instantly.
+
+Benefits
+Real-time churn prediction
+
+Risk segmentation
+
+Business decision support
+
+Interactive scenario analysis
+
+
