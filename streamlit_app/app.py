@@ -69,10 +69,6 @@ c3.metric("Model", "Random Forest")
 
 st.divider()
 
-# ---------------------------------------------------
-# SIDEBAR INPUT
-# ---------------------------------------------------
-
 st.sidebar.header("Customer Details")
 
 credit_score = st.sidebar.number_input(
@@ -131,10 +127,6 @@ gender = st.sidebar.selectbox(
     ["Male","Female"]
 )
 
-# ---------------------------------------------------
-# FEATURE ENGINEERING
-# ---------------------------------------------------
-
 balance_salary_ratio = balance/(salary+1)
 
 product_density = products/(tenure+1)
@@ -147,9 +139,6 @@ geography_germany = 1 if geography=="Germany" else 0
 geography_spain = 1 if geography=="Spain" else 0
 gender_male = 1 if gender=="Male" else 0
 
-# ---------------------------------------------------
-# INPUT DATAFRAME
-# ---------------------------------------------------
 
 input_df = pd.DataFrame({
 
@@ -173,16 +162,10 @@ input_df = pd.DataFrame({
 
 })
 
-# Ensure column order matches training
-
 input_df = input_df.reindex(
     columns=columns,
     fill_value=0
 )
-
-# ---------------------------------------------------
-# PREDICTION
-# ---------------------------------------------------
 
 if st.button("🚀 Predict Churn Risk"):
 
@@ -258,10 +241,6 @@ if st.button("🚀 Predict Churn Risk"):
         use_container_width=True
     )
 
-# ---------------------------------------------------
-# FEATURE IMPORTANCE
-# ---------------------------------------------------
-
 st.divider()
 
 st.subheader("Top Important Features")
@@ -299,14 +278,10 @@ except Exception as e:
         f"feature_importance.csv not found.\n\n{e}"
     )
 
-# ---------------------------------------------------
-# INPUT DATA
-# ---------------------------------------------------
-
 st.divider()
 
 st.subheader("Customer Input")
 
 st.dataframe(input_df)
 
-st.caption("Created by Saksham Keshri | MCA Final Year Project")
+st.caption("Created by Saksham Keshri ")
